@@ -47,7 +47,7 @@ if(mysql_num_rows($res)!=0){
 		  $sajjad = $row['id'];
 		  $newItem = $TestFeed->createNewItem();
 		  $newItem->setTitle($row['title']);
-		  $newItem->setLink("http://$username.ol2.ir/page-"$row['id'].html');
+		  $newItem->setLink("http://$username.ol2.ir/page-".$row['id'].'html');
 		  $newItem->setDate($row['date']);
 		  $newItem->setDescription($row['text']);
 		  //Now add the feed item
